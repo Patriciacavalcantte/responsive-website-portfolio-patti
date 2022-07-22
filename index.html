@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/icone_sembg.png" type="image/x-icon">
+    
+        <link rel="shortcut icon" href="./assets/img/icone_sembg.png">
 
         <!--=============== BOXICONS ===============-->
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -14,6 +15,7 @@
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
         <!--=============== CSS ===============-->
+        <link rel="preload" href="./assets/css/styles.css a" as="style">
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Patrícia Cavalcante</title>
@@ -22,9 +24,11 @@
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
             <nav class="nav container">
-                <div class = "nav_logo">
+            
+                <picture class = "nav_logo">
+                    <source media ="(max-width: 800px)" srcset="./assets/img/icone_mobile.png">
                 <a href="#top" class="nav__logo"><img src="./assets/img/icone_sembg.png" alt="Logomarca do site arte by https://dribbble.com/shots/14593609-Astro-Cat/attachments/6284997?mode=media"></a>
-            </div>
+                </picture>
                 <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -72,7 +76,7 @@
                     <div class="home__data">
                         <span class="home__greeting">Olá, eu sou a</span>
                         <h1 class="home__name">Patrícia</h1>
-                        <h3 class="home__education">Desenvolvedora Front-end</h3>
+                        <h3 class="home__education">Desenvolvedora Frontend</h3>
 
                         <div class="home__buttons">
                             <!-- Insert your CV -->
@@ -113,7 +117,7 @@
                 <h2 class="section__title">Sobre mim</h2>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/about.png" alt="" class="about__img">
+                    <img src="assets/img/about.png" width="1080" height="982" alt="ilustração de gato by Astro cat" class="about__img">
 
                     <div class="about__data">
                         <div class="about__info">
@@ -126,7 +130,7 @@
                             <div class="about__box">
                                 <i class='bx bx-briefcase-alt about__icon' ></i>
                                 <h3 class="about__title">Projetos</h3>
-                                <span class="about__subtitle">48+ Projetos no GitHub</span>
+                                <span class="about__subtitle">+26 Projetos no GitHub</span>
                             </div>
 
                             <div class="about__box">
@@ -137,7 +141,7 @@
                         </div>
 
                         <p class="about__description">
-                            Sou desenvolvedora Front-end freelancer , carioca, apaixonada  por gatos, pelo universo, por todo tipo de arte e pela oportunidade de criar coisas divertidas e interativas com código.
+                            Sou desenvolvedora Frontend freelancer , carioca, apaixonada  por gatos, pelo universo, por todo tipo de arte e pela oportunidade de criar coisas divertidas e interativas com código.
                         </p>
 
                         <a href="#contact" class="button">Vamos nos conhecer melhor?</a>
@@ -444,26 +448,6 @@
                             Demo <i class='bx bx-right-arrow-alt work__icon' ></i>
                         </a>
                     </div>
-
-                    <div class="work__card mix web">
-                        <img src="assets/img/work4.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Web design</h3>
-                        
-                        <a href="" class="work__button">
-                            Demo <i class='bx bx-right-arrow-alt work__icon' ></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix movil">
-                        <img src="assets/img/work5.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Laboratório</h3>
-                        
-                        <a href="" class="work__button">
-                            Demo <i class='bx bx-right-arrow-alt work__icon' ></i>
-                        </a>
-                    </div>
                 </div>
             </section>
 
@@ -475,29 +459,29 @@
                 <div class="testimonial__container container swiper">
                     <div class="swiper-wrapper">
                         <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
+                            <img src="assets/img/mae.jpg" alt="Senhora branca de chapeu" class="testimonial__img">
 
-                            <h3 class="testimonial__name">Futuro cliente gato</h3>
+                            <h3 class="testimonial__name">Minha mãe</h3>
                             <p class="testimonial__description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, optio autem. id at recusandae dolor provident culpa quae, voluptatum velit!
+                                Filha de ouro, estuda muito, desenha coisas desde criancinha. Só não gosta de falar ao telefone o resto ela faz tudo perfeito. 
                             </p>
                         </div>
 
                         <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
+                            <img src="assets/img/pai.png" alt="senhor branco de chapeu" class="testimonial__img">
 
-                            <h3 class="testimonial__name">Futura cliente gata</h3>
+                            <h3 class="testimonial__name">Meu pai</h3>
                             <p class="testimonial__description">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi corporis error iste voluptatem. Molestiae id veniam minus pariatur illo. Aliquam!
+                                Esforçada, entende tudo de computador. Sempre conserta o meu celular quando ele dá problema no Zap.
                             </p>
                         </div>
 
                         <div class="testimonial__card swiper-slide">
                             <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
 
-                            <h3 class="testimonial__name">Futura cliente gata</h3>
+                            <h3 class="testimonial__name">Bruna Gomes</h3>
                             <p class="testimonial__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quibusdam accusamus minima ad repudiandae, accusamus incidunt, voluptates unde ducimus? Nemo!
+                                O site da minha marcenaria ficou incrível, superou totalmente as minhas espectativas.
                             </p>
                         </div>
                     </div>
@@ -591,17 +575,6 @@
                     </li>
                 </ul>
 
-                <ul class="footer__social">
-                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-facebook'></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-instagram' ></i>
-                    </a>
-                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-twitter' ></i>
-                    </a>
-                </ul>
 
                 <span class="footer__copy">
                     &#169; Patrícia Cavalcante. Alguns direitos reservados.
